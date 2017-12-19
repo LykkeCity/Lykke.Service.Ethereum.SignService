@@ -1,4 +1,4 @@
 FROM microsoft/aspnetcore:2.0
 WORKDIR /app
 COPY . .
-ENTRYPOINT ["dotnet", "Lykke.Service.EthereumClassic.SignService.dll"]
+ENTRYPOINT ["dotnet", "Lykke.Service.Ethereum.SignService.dll"]
