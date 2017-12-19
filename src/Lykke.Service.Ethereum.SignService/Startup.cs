@@ -52,10 +52,10 @@ namespace Lykke.Service.Ethereum.SignService
                 });
 
                 var builder = new ContainerBuilder();
-                var appSettings = Configuration.LoadSettings<AppSettings>();
-                Log = CreateLogWithSlack(services, appSettings);
+                //var appSettings = Configuration.LoadSettings<AppSettings>();
+                Log = CreateLogWithSlack(services, null);
 
-                builder.RegisterModule(new ServiceModule(appSettings.Nested(x => x.EthereumSignServiceService), Log));
+                builder.RegisterModule(new ServiceModule(null, Log));
                 builder.Populate(services);
                 ApplicationContainer = builder.Build();
 
