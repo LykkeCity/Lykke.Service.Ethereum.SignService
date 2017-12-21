@@ -9,7 +9,7 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 namespace Lykke.Service.Ethereum.SignService.Controllers
 {
     // NOTE: See https://lykkex.atlassian.net/wiki/spaces/LKEWALLET/pages/35755585/Add+your+app+to+Monitoring
-    [Route("api/[controller]")]
+    [Route("api/sign")]
     public class SignController : Controller
     {
         private readonly ISignService _signService;
