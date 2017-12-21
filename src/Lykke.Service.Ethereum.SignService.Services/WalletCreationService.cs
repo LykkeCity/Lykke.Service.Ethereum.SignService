@@ -18,7 +18,7 @@ namespace Lykke.Service.Ethereum.SignService.Services
             return new KeyModel()
             {
                 PrivateKey = key.GetPrivateKey(),
-                PublicAddress = key.GetPublicAddress()
+                PublicAddress = key.GetPublicAddress().ToLower()
             };
         }
     }
