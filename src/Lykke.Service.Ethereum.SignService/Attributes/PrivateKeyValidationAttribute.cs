@@ -22,7 +22,7 @@ namespace Lykke.Service.Ethereum.SignService.Attributes
             }
             else if (value is IEnumerable<string> pkArray)
             {
-                if (pkArray.Count() > 1)
+                if (pkArray.Count() > 1 || pkArray.Count() == 0)
                 {
                     return new ValidationResult($"Ethereum supports only one key signing. Given array is {pkArray.Count()} length.");
                 }

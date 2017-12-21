@@ -7,7 +7,7 @@ namespace Lykke.Service.Ethereum.SignService.Models
     [DataContract]
     public class SignRequest
     {
-        [DataMember(Name = "privateKey")]
+        [DataMember(Name = "privateKeys")]
         [PrivateKeyValidation]
         public IEnumerable<string> PrivateKeys { get; set; }
 
