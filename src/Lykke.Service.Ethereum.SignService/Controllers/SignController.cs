@@ -5,6 +5,7 @@ using Lykke.Service.Ethereum.SignService.Models;
 using Lykke.Service.Ethereum.SignService.Helpers;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.SwaggerGen;
+using System.Linq;
 
 namespace Lykke.Service.Ethereum.SignService.Controllers
 {
@@ -35,7 +36,7 @@ namespace Lykke.Service.Ethereum.SignService.Controllers
                 return BadRequest(ErrorResponse.Create("ValidationError", ModelState));
             }
 
-            var signedTransactionRaw = await _signService.SignTransactionAsync(signRequest.PrivateKey, signRequest.TransactionHex);
+            var signedTransactionRaw = await _signService.SignTransactionAsync(signRequest.PrivateKeys?.FirstOrDefault(), signRequest.TransactionHex);
 
             return Ok(new SignedTransactionResponse()
             {

@@ -1,4 +1,5 @@
 ﻿using Lykke.Service.Ethereum.SignService.Attributes;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace Lykke.Service.Ethereum.SignService.Models
@@ -8,7 +9,7 @@ namespace Lykke.Service.Ethereum.SignService.Models
     {
         [DataMember(Name = "privateKey")]
         [PrivateKeyValidation]
-        public string PrivateKey { get; set; }
+        public IEnumerable<string> PrivateKeys { get; set; }
 
         [DataMember(Name = "transactionHex")]
         [TransactionHexValidation]

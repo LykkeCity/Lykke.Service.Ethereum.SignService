@@ -24,7 +24,7 @@ namespace Lykke.Service.Ethereum.SignService.Controllers
         /// <returns></returns>
         [HttpPost]
         [SwaggerOperation("CreateWallet")]
-        [ProducesResponseType(typeof(SignedTransactionResponse), (int)HttpStatusCode.OK)]
+        [ProducesResponseType(typeof(KeyModelResponse), (int)HttpStatusCode.OK)]
         [ProducesResponseType(typeof(ErrorResponse), (int)HttpStatusCode.BadRequest)]
         [ProducesResponseType(typeof(ErrorResponse), (int)HttpStatusCode.InternalServerError)]
         public async Task<IActionResult> CreateWallet()
