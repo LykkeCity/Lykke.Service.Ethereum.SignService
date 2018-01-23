@@ -5,7 +5,7 @@ namespace Lykke.Service.EthereumSignService.Core.Settings
 {
     public class AppSettings
     {
-        public EthereumClassicSignServiceSettings EthereumSignServiceService { get; set; }
+        public EthereumSignServiceSettings EthereumSignServiceService { get; set; }
         public SlackNotificationsSettings SlackNotifications { get; set; }
     }
 }

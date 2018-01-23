@@ -11,12 +11,12 @@ namespace Lykke.Service.EthereumSignService.Modules
 {
     public class ServiceModule : Module
     {
-        private readonly IReloadingManager<EthereumClassicSignServiceSettings> _settings;
+        private readonly IReloadingManager<EthereumSignServiceSettings> _settings;
         private readonly ILog _log;
         // NOTE: you can remove it if you don't need to use IServiceCollection extensions to register service specific dependencies
         private readonly IServiceCollection _services;
 
-        public ServiceModule(IReloadingManager<EthereumClassicSignServiceSettings> settings, ILog log)
+        public ServiceModule(IReloadingManager<EthereumSignServiceSettings> settings, ILog log)
         {
             _settings = settings;
             _log = log;

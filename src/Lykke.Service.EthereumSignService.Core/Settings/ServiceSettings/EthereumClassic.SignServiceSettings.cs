@@ -1,6 +1,6 @@
 ﻿namespace Lykke.Service.EthereumSignService.Core.Settings.ServiceSettings
 {
-    public class EthereumClassicSignServiceSettings
+    public class EthereumSignServiceSettings
     {
         public DbSettings Db { get; set; }
     }

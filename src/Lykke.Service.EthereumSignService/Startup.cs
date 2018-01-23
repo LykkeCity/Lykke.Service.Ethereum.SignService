@@ -48,7 +48,7 @@ namespace Lykke.Service.EthereumSignService
 
                 services.AddSwaggerGen(options =>
                 {
-                    options.DefaultLykkeConfiguration("v1", "EthereumClassic.SignService API");
+                    options.DefaultLykkeConfiguration("v1", "EthereumSignService");
                 });
 
                 var builder = new ContainerBuilder();
@@ -77,7 +77,7 @@ namespace Lykke.Service.EthereumSignService
                     app.UseDeveloperExceptionPage();
                 }
 
-                app.UseLykkeMiddleware("EthereumClassic.SignService", ex =>
+                app.UseLykkeMiddleware("EthereumSignService", ex =>
                 {
                     if (ex is ClientSideException clientError)
                     {
