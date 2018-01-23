@@ -13,6 +13,6 @@ namespace Lykke.Service.Ethereum.SignService.Models
 
         [DataMember(Name = "transactionHex")]
         [TransactionHexValidation]
-        public string TransactionHex { get; set; }
+        public string TransactionContext { get; set; }
     }
 }

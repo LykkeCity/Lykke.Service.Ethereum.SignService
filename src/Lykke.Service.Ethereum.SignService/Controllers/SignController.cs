@@ -36,7 +36,7 @@ namespace Lykke.Service.Ethereum.SignService.Controllers
                 return BadRequest(ErrorResponse.Create("ValidationError", ModelState));
             }
 
-            var signedTransactionRaw = await _signService.SignTransactionAsync(signRequest.PrivateKeys?.FirstOrDefault(), signRequest.TransactionHex);
+            var signedTransactionRaw = await _signService.SignTransactionAsync(signRequest.PrivateKeys?.FirstOrDefault(), signRequest.TransactionContext);
 
             return Ok(new SignedTransactionResponse()
             {

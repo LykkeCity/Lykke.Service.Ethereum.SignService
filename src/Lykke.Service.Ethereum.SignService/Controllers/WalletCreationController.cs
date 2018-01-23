@@ -8,12 +8,12 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 namespace Lykke.Service.Ethereum.SignService.Controllers
 {
     // NOTE: See https://lykkex.atlassian.net/wiki/spaces/LKEWALLET/pages/35755585/Add+your+app+to+Monitoring
-    [Route("api/wallet")]
-    public class WalletController : Controller
+    [Route("api/wallets")]
+    public class WalletsController : Controller
     {
         private readonly IWalletCreationService _walletCreationService;
 
-        public WalletController(IWalletCreationService walletCreationService)
+        public WalletsController(IWalletCreationService walletCreationService)
         {
             _walletCreationService = walletCreationService;
         }
