@@ -11,7 +11,7 @@ namespace Lykke.Service.Ethereum.SignService.Models
         [PrivateKeyValidation]
         public IEnumerable<string> PrivateKeys { get; set; }
 
-        [DataMember(Name = "transactionHex")]
+        [DataMember(Name = "transactionContext")]
         [TransactionHexValidation]
         public string TransactionContext { get; set; }
     }
