@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <AssemblyName>Lykke.Service.EthereumSignService.Services</AssemblyName>
     <RootNamespace>Lykke.Service.EthereumSignService.Services</RootNamespace>
     <Version>1.0.0</Version>
@@ -10,7 +10,7 @@
   <ItemGroup>
     <PackageReference Include="CsvHelper" Version="6.1.1" />
     <PackageReference Include="Flurl.Http" Version="2.1.1" />
-    <PackageReference Include="Lykke.Common" Version="4.4.2" />
+    <PackageReference Include="Lykke.Common" Version="7.0.2" />
     <PackageReference Include="Nethereum.Signer" Version="2.2.3" />
   </ItemGroup>
 
