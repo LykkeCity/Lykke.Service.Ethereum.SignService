@@ -1,11 +1,7 @@
-﻿using Lykke.Service.EthereumSignService.Core.Settings.ServiceSettings;
-using Lykke.Service.EthereumSignService.Core.Settings.SlackNotifications;
-
-namespace Lykke.Service.EthereumSignService.Core.Settings
+﻿namespace Lykke.Service.EthereumSignService.Core.Settings
 {
     public class AppSettings
     {
-        public EthereumSignServiceSettings EthereumSignService { get; set; }
-        public SlackNotificationsSettings SlackNotifications { get; set; }
+        // Currently, we have nothing to care about here. But let the class remain reserved for (possible) future use.
     }
 }
