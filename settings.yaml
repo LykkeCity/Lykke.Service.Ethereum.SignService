@@ -1,0 +1,5 @@
+SignApiService:    
+
+MonitoringServiceClient:
+    MonitoringServiceUrl:
+        settings-key: MonitoringServiceUrl
