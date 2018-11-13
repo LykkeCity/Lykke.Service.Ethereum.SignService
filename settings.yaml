@@ -1,6 +1,4 @@
-SignApiService:    
-    Network:
-        settings-key: Ethereum-Network
+SignApiService: 
         
 MonitoringServiceClient:
     MonitoringServiceUrl:
